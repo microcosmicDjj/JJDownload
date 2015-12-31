@@ -1,0 +1,28 @@
+//
+//  JJDownload.pch
+//  JJDownload
+//
+//  Created by Mac on 15/12/28.
+//  Copyright © 2015年 DJJ. All rights reserved.
+//
+
+#ifndef JJDownload_pch
+#define JJDownload_pch
+
+#define JJDownloadDefault @"没有状态"
+#define JJDownloadResumed @"正在下载"
+#define JJDownloadWillResume @"等待下载"
+#define JJDownloadSuspened @"暂停"
+#define JJDownloadSucceed @"下载成功"
+
+#define JJDownloadSateDefault @"下载"
+#define JJDownloadSateAddSucceed @"已经在下载列表"
+#define JJDownloadSateDownloadSucceed @"已经下载"
+
+//保存url的数组的key
+#define JJDownloadUrlKey @"dowloads"
+//下载成功通知的key值
+#define JJdownloadSucceedKey @"JJdownloadSucceedKey"
+
+#endif /* JJDownload_pch */
+

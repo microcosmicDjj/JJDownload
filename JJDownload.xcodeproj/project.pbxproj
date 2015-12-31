@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0408B6BF1C3363D100F2D94D /* JJSucceedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0408B6BE1C3363D100F2D94D /* JJSucceedTableViewCell.xib */; };
+		0408B6C31C33669A00F2D94D /* JJDownloadSucceedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408B6C11C33669A00F2D94D /* JJDownloadSucceedTableViewController.m */; };
+		0408B6C41C33669A00F2D94D /* JJDownloadSucceedTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0408B6C21C33669A00F2D94D /* JJDownloadSucceedTableViewController.xib */; };
+		0408B6C71C336AFC00F2D94D /* JJDowloadFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408B6C61C336AFC00F2D94D /* JJDowloadFile.m */; };
+		0408B6CA1C336C6800F2D94D /* JJDowloadFilePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408B6C91C336C6800F2D94D /* JJDowloadFilePath.m */; };
+		0408B6D01C337D0E00F2D94D /* JJDowloadManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408B6CF1C337D0E00F2D94D /* JJDowloadManage.m */; };
+		0408B6D61C337DB700F2D94D /* JJFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 0408B6D51C337DB700F2D94D /* JJFile.m */; };
 		0422CC6C1C2E66AD00403A15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422CC6B1C2E66AD00403A15 /* main.m */; };
 		0422CC6F1C2E66AD00403A15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422CC6E1C2E66AD00403A15 /* AppDelegate.m */; };
 		0422CC721C2E66AD00403A15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422CC711C2E66AD00403A15 /* ViewController.m */; };
@@ -16,6 +23,16 @@
 		0422CC7D1C2E66AD00403A15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0422CC7B1C2E66AD00403A15 /* LaunchScreen.storyboard */; };
 		0422CC881C2E66AD00403A15 /* JJDownloadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422CC871C2E66AD00403A15 /* JJDownloadTests.m */; };
 		0422CC931C2E66AD00403A15 /* JJDownloadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422CC921C2E66AD00403A15 /* JJDownloadUITests.m */; };
+		0422CCA61C2E6B8500403A15 /* NSString+JJDownloadMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 0422CCA51C2E6B8500403A15 /* NSString+JJDownloadMD5.m */; };
+		04DC82301C30C31600D32210 /* JJTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC822F1C30C31600D32210 /* JJTableViewController.m */; };
+		04DC82331C30CB1600D32210 /* JJTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC82321C30CB1600D32210 /* JJTableViewCell.m */; };
+		04DC82371C30D40000D32210 /* JJDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC82361C30D40000D32210 /* JJDetailsTableViewCell.m */; };
+		04DC823A1C30DD7F00D32210 /* JJDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC82391C30DD7F00D32210 /* JJDetailsTableViewController.m */; };
+		04E473481C3229F700073F1C /* RIButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E473431C3229F700073F1C /* RIButtonItem.m */; };
+		04E473491C3229F700073F1C /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E473451C3229F700073F1C /* UIActionSheet+Blocks.m */; };
+		04E4734A1C3229F700073F1C /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E473471C3229F700073F1C /* UIAlertView+Blocks.m */; };
+		04E473501C32847400073F1C /* JJSucceedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E4734F1C32847400073F1C /* JJSucceedTableViewCell.m */; };
+		04E473521C3285F700073F1C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E473511C3285F700073F1C /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +53,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0408B6BE1C3363D100F2D94D /* JJSucceedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJSucceedTableViewCell.xib; sourceTree = "<group>"; };
+		0408B6C01C33669A00F2D94D /* JJDownloadSucceedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJDownloadSucceedTableViewController.h; sourceTree = "<group>"; };
+		0408B6C11C33669A00F2D94D /* JJDownloadSucceedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJDownloadSucceedTableViewController.m; sourceTree = "<group>"; };
+		0408B6C21C33669A00F2D94D /* JJDownloadSucceedTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JJDownloadSucceedTableViewController.xib; sourceTree = "<group>"; };
+		0408B6C51C336AFC00F2D94D /* JJDowloadFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJDowloadFile.h; sourceTree = "<group>"; };
+		0408B6C61C336AFC00F2D94D /* JJDowloadFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJDowloadFile.m; sourceTree = "<group>"; };
+		0408B6C81C336C6800F2D94D /* JJDowloadFilePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJDowloadFilePath.h; sourceTree = "<group>"; };
+		0408B6C91C336C6800F2D94D /* JJDowloadFilePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJDowloadFilePath.m; sourceTree = "<group>"; };
+		0408B6CE1C337D0E00F2D94D /* JJDowloadManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJDowloadManage.h; sourceTree = "<group>"; };
+		0408B6CF1C337D0E00F2D94D /* JJDowloadManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJDowloadManage.m; sourceTree = "<group>"; };
+		0408B6D41C337DB700F2D94D /* JJFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJFile.h; sourceTree = "<group>"; };
+		0408B6D51C337DB700F2D94D /* JJFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJFile.m; sourceTree = "<group>"; };
 		0422CC671C2E66AD00403A15 /* JJDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0422CC6B1C2E66AD00403A15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0422CC6D1C2E66AD00403A15 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +82,26 @@
 		0422CC8E1C2E66AD00403A15 /* JJDownloadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JJDownloadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0422CC921C2E66AD00403A15 /* JJDownloadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJDownloadUITests.m; sourceTree = "<group>"; };
 		0422CC941C2E66AD00403A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0422CCA41C2E6B8500403A15 /* NSString+JJDownloadMD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JJDownloadMD5.h"; sourceTree = "<group>"; };
+		0422CCA51C2E6B8500403A15 /* NSString+JJDownloadMD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JJDownloadMD5.m"; sourceTree = "<group>"; };
+		04DC822E1C30C31600D32210 /* JJTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJTableViewController.h; sourceTree = "<group>"; };
+		04DC822F1C30C31600D32210 /* JJTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJTableViewController.m; sourceTree = "<group>"; };
+		04DC82311C30CB1600D32210 /* JJTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJTableViewCell.h; sourceTree = "<group>"; };
+		04DC82321C30CB1600D32210 /* JJTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJTableViewCell.m; sourceTree = "<group>"; };
+		04DC82351C30D40000D32210 /* JJDetailsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJDetailsTableViewCell.h; sourceTree = "<group>"; };
+		04DC82361C30D40000D32210 /* JJDetailsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJDetailsTableViewCell.m; sourceTree = "<group>"; };
+		04DC82381C30DD7F00D32210 /* JJDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJDetailsTableViewController.h; sourceTree = "<group>"; };
+		04DC82391C30DD7F00D32210 /* JJDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJDetailsTableViewController.m; sourceTree = "<group>"; };
+		04DC823B1C3106D500D32210 /* JJDownload.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JJDownload.pch; sourceTree = "<group>"; };
+		04E473421C3229F700073F1C /* RIButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIButtonItem.h; sourceTree = "<group>"; };
+		04E473431C3229F700073F1C /* RIButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RIButtonItem.m; sourceTree = "<group>"; };
+		04E473441C3229F700073F1C /* UIActionSheet+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Blocks.h"; sourceTree = "<group>"; };
+		04E473451C3229F700073F1C /* UIActionSheet+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Blocks.m"; sourceTree = "<group>"; };
+		04E473461C3229F700073F1C /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
+		04E473471C3229F700073F1C /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
+		04E4734E1C32847400073F1C /* JJSucceedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JJSucceedTableViewCell.h; sourceTree = "<group>"; };
+		04E4734F1C32847400073F1C /* JJSucceedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JJSucceedTableViewCell.m; sourceTree = "<group>"; };
+		04E473511C3285F700073F1C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E473521C3285F700073F1C /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +133,7 @@
 		0422CC5E1C2E66AD00403A15 = {
 			isa = PBXGroup;
 			children = (
+				04E473511C3285F700073F1C /* MediaPlayer.framework */,
 				0422CC691C2E66AD00403A15 /* JJDownload */,
 				0422CC861C2E66AD00403A15 /* JJDownloadTests */,
 				0422CC911C2E66AD00403A15 /* JJDownloadUITests */,
@@ -107,6 +158,9 @@
 				0422CC6E1C2E66AD00403A15 /* AppDelegate.m */,
 				0422CC701C2E66AD00403A15 /* ViewController.h */,
 				0422CC711C2E66AD00403A15 /* ViewController.m */,
+				04E473411C3229F700073F1C /* UIAlertView-Blocks */,
+				04DC82341C30CB9D00D32210 /* Class */,
+				0422CCA01C2E66E100403A15 /* Download */,
 				0422CC731C2E66AD00403A15 /* Main.storyboard */,
 				0422CC791C2E66AD00403A15 /* Assets.xcassets */,
 				0422CC7B1C2E66AD00403A15 /* LaunchScreen.storyboard */,
@@ -141,6 +195,58 @@
 				0422CC941C2E66AD00403A15 /* Info.plist */,
 			);
 			path = JJDownloadUITests;
+			sourceTree = "<group>";
+		};
+		0422CCA01C2E66E100403A15 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				04DC823B1C3106D500D32210 /* JJDownload.pch */,
+				0408B6CE1C337D0E00F2D94D /* JJDowloadManage.h */,
+				0408B6CF1C337D0E00F2D94D /* JJDowloadManage.m */,
+				0408B6D41C337DB700F2D94D /* JJFile.h */,
+				0408B6D51C337DB700F2D94D /* JJFile.m */,
+				0408B6C51C336AFC00F2D94D /* JJDowloadFile.h */,
+				0408B6C61C336AFC00F2D94D /* JJDowloadFile.m */,
+				0408B6C81C336C6800F2D94D /* JJDowloadFilePath.h */,
+				0408B6C91C336C6800F2D94D /* JJDowloadFilePath.m */,
+				0422CCA41C2E6B8500403A15 /* NSString+JJDownloadMD5.h */,
+				0422CCA51C2E6B8500403A15 /* NSString+JJDownloadMD5.m */,
+			);
+			path = Download;
+			sourceTree = "<group>";
+		};
+		04DC82341C30CB9D00D32210 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				04DC822E1C30C31600D32210 /* JJTableViewController.h */,
+				04DC822F1C30C31600D32210 /* JJTableViewController.m */,
+				04DC82381C30DD7F00D32210 /* JJDetailsTableViewController.h */,
+				04DC82391C30DD7F00D32210 /* JJDetailsTableViewController.m */,
+				0408B6C01C33669A00F2D94D /* JJDownloadSucceedTableViewController.h */,
+				0408B6C11C33669A00F2D94D /* JJDownloadSucceedTableViewController.m */,
+				0408B6C21C33669A00F2D94D /* JJDownloadSucceedTableViewController.xib */,
+				04DC82351C30D40000D32210 /* JJDetailsTableViewCell.h */,
+				04DC82361C30D40000D32210 /* JJDetailsTableViewCell.m */,
+				04E4734E1C32847400073F1C /* JJSucceedTableViewCell.h */,
+				04E4734F1C32847400073F1C /* JJSucceedTableViewCell.m */,
+				0408B6BE1C3363D100F2D94D /* JJSucceedTableViewCell.xib */,
+				04DC82311C30CB1600D32210 /* JJTableViewCell.h */,
+				04DC82321C30CB1600D32210 /* JJTableViewCell.m */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		04E473411C3229F700073F1C /* UIAlertView-Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				04E473421C3229F700073F1C /* RIButtonItem.h */,
+				04E473431C3229F700073F1C /* RIButtonItem.m */,
+				04E473441C3229F700073F1C /* UIActionSheet+Blocks.h */,
+				04E473451C3229F700073F1C /* UIActionSheet+Blocks.m */,
+				04E473461C3229F700073F1C /* UIAlertView+Blocks.h */,
+				04E473471C3229F700073F1C /* UIAlertView+Blocks.m */,
+			);
+			path = "UIAlertView-Blocks";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +354,9 @@
 			files = (
 				0422CC7D1C2E66AD00403A15 /* LaunchScreen.storyboard in Resources */,
 				0422CC7A1C2E66AD00403A15 /* Assets.xcassets in Resources */,
+				0408B6BF1C3363D100F2D94D /* JJSucceedTableViewCell.xib in Resources */,
 				0422CC751C2E66AD00403A15 /* Main.storyboard in Resources */,
+				0408B6C41C33669A00F2D94D /* JJDownloadSucceedTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,10 +381,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0408B6C31C33669A00F2D94D /* JJDownloadSucceedTableViewController.m in Sources */,
+				0408B6C71C336AFC00F2D94D /* JJDowloadFile.m in Sources */,
 				0422CC721C2E66AD00403A15 /* ViewController.m in Sources */,
 				0422CC6F1C2E66AD00403A15 /* AppDelegate.m in Sources */,
+				04DC82371C30D40000D32210 /* JJDetailsTableViewCell.m in Sources */,
+				04E473481C3229F700073F1C /* RIButtonItem.m in Sources */,
+				04E473491C3229F700073F1C /* UIActionSheet+Blocks.m in Sources */,
+				0408B6D61C337DB700F2D94D /* JJFile.m in Sources */,
+				04E473501C32847400073F1C /* JJSucceedTableViewCell.m in Sources */,
 				0422CC6C1C2E66AD00403A15 /* main.m in Sources */,
+				04DC82331C30CB1600D32210 /* JJTableViewCell.m in Sources */,
+				0408B6D01C337D0E00F2D94D /* JJDowloadManage.m in Sources */,
 				0422CC781C2E66AD00403A15 /* JJDownload.xcdatamodeld in Sources */,
+				04DC82301C30C31600D32210 /* JJTableViewController.m in Sources */,
+				04E4734A1C3229F700073F1C /* UIAlertView+Blocks.m in Sources */,
+				04DC823A1C30DD7F00D32210 /* JJDetailsTableViewController.m in Sources */,
+				0422CCA61C2E6B8500403A15 /* NSString+JJDownloadMD5.m in Sources */,
+				0408B6CA1C336C6800F2D94D /* JJDowloadFilePath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +489,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -404,7 +526,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -415,6 +537,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JJDownload/Download/JJDownload.pch";
 				INFOPLIST_FILE = JJDownload/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.gt2002.www.JJDownload;
@@ -426,6 +549,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JJDownload/Download/JJDownload.pch";
 				INFOPLIST_FILE = JJDownload/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.gt2002.www.JJDownload;
@@ -500,6 +624,7 @@
 				0422CC991C2E66AD00403A15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0422CC9A1C2E66AD00403A15 /* Build configuration list for PBXNativeTarget "JJDownloadTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +633,7 @@
 				0422CC9C1C2E66AD00403A15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0422CC9D1C2E66AD00403A15 /* Build configuration list for PBXNativeTarget "JJDownloadUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +642,7 @@
 				0422CC9F1C2E66AD00403A15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
