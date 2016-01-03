@@ -30,7 +30,6 @@
     self.progressView.progress = (float)file.writeBytesSize/(float)file.allBytesSize;
     //设置状态
     self.downloadStateLabel.text = [self stateType:file.downloadType];
-//    NSLog(@"JJDownloadTypeResumed = %d",file.downloadType);
     self.downloadSizeLabel.text = [NSString stringWithFormat:@"%.2f/%.2fMB",(file.writeBytesSize/1024.0/1024.0),(file.allBytesSize/1024.0/1024.0)];
     self.fileNameLabel.text = file.urlStr.lastPathComponent;
 }

@@ -30,9 +30,9 @@ typedef NS_ENUM(NSInteger, JJUrlDownloadState) {
 
 + (instancetype) manage;
 
-//MARK: 点击一个开始
+//MARK: 开始
 - (void) succeedUrlStr:(NSString *) urlStr;
-//MARK: 点击一个暂停
+//MARK: 暂停
 - (void) suspendUrlStr:(NSString *) urlStr;
 //MARK: 连接状态
 - (JJUrlDownloadState) urlDownloadState:(NSString *) urlStr;

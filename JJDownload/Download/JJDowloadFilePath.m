@@ -33,7 +33,7 @@
  */
 + (NSString *) totalLengthFullpath
 {
-    NSString *totalLengthFullPath = [NSString stringWithFormat:@"%@/%@.ZMJ",self.createDownloadFile,@"6666666"];
+    NSString *totalLengthFullPath = [NSString stringWithFormat:@"%@/%@.xxx",self.createDownloadFile,@"6666666"];
     return totalLengthFullPath;
 }
 
@@ -56,7 +56,6 @@
  */
 + (NSInteger) fileLength:(NSString *) urlStr
 {
-    NSLog(@"NSFileManager = %d",[[[NSFileManager defaultManager] attributesOfItemAtPath:[self filePathUrl:urlStr] error:nil][NSFileSize] integerValue]);
     return [[[NSFileManager defaultManager] attributesOfItemAtPath:[self filePathUrl:urlStr] error:nil][NSFileSize] integerValue];
 }
 

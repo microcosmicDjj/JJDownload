@@ -81,7 +81,7 @@
 
     JJFile *file = [_manage willResumes][indexPath.row];
     cell.file = file;
-//
+
     return cell;
 }
 

@@ -24,7 +24,6 @@
     
     _manage = [JJDowloadManage manage];
     self.title = @"下载完成";
-    NSLog(@"[_manage succeeds].count %ld",(long)[_manage succeeds].count);
 }
 
 - (void) viewWillAppear:(BOOL)animated

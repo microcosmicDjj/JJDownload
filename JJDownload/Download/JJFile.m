@@ -155,7 +155,7 @@
 //存储文件
 - (NSString *) totalLengthFullpath
 {
-    NSString *totalLengthFullPath = [NSString stringWithFormat:@"%@/%@",_createFile,@"6666666.ZMJ"];
+    NSString *totalLengthFullPath = [NSString stringWithFormat:@"%@/%@",_createFile,@"6666666.xxx"];
     return totalLengthFullPath;
 }
 
