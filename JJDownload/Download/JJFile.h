@@ -34,7 +34,7 @@ typedef void(^JJFileBlock) (id file);
 /*是否下载成功**/
 @property (nonatomic) BOOL dowloadSucceed;
 /*回调block**/
-@property (nonatomic, strong) JJFileBlock block;
+@property (nonatomic, copy) JJFileBlock block;
 
 - (instancetype)initWithUrlStr:(NSString *) urlStr;
 

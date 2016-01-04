@@ -50,6 +50,7 @@ typedef NS_ENUM(NSInteger, JJUrlDownloadState) {
 - (NSArray *) succeeds;
 //MARK: 没有下载完成的数组
 - (NSArray *) willResumes;
-
+//MAEK: 是否还在下载
+- (BOOL) isSucceedDowload;
 
 @end

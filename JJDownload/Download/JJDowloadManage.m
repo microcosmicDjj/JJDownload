@@ -245,6 +245,16 @@ static JJDowloadManage *G_Manage;
     }
 }
 
+//MAEK: 是否还在下载
+- (BOOL) isSucceedDowload
+{
+    NSArray *succeeds = [self resumes];
+    if (succeeds.count > 0) {
+        return YES;
+    }
+    return NO;
+}
+
 /*
  * MARK: 懒加载
  */
