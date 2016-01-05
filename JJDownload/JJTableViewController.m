@@ -25,8 +25,8 @@
     [super viewDidLoad];
     self.urls = [NSMutableArray array];
     //下载地址为本地，需要换成外网的才可使用
-    for (int i = 1; i<=10; i++) { //
-        [self.urls addObject:[NSString stringWithFormat:@"http://192.168.0.1:8080/resource/%d.mp4", i]];
+    for (int i = 1; i<=10; i++) {
+        [self.urls addObject:[NSString stringWithFormat:@"http://120.25.226.186:32812/resources/videos/minion_%02d.mp4", i]];
     }
     _manage = [JJDowloadManage manage];
     //最大下载为2，默认为3

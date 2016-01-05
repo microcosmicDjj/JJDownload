@@ -11,13 +11,22 @@
 
 @interface AppDelegate ()
 
+@property (nonatomic) UIBackgroundTaskIdentifier backgroundTaskIdentifier;
+
 @end
 
 @implementation AppDelegate
 
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(endBackgroundTask) name:JJEndBackgroundTask object:nil];
     return YES;
 }
 
@@ -33,12 +42,41 @@
     //判断需不需要申请后台运行，如果需要申请10分钟的后台运行权限
     //如果正在下载
     if ([manage isSucceedDowload]) {
-        UIBackgroundTaskIdentifier ID = [application beginBackgroundTaskWithExpirationHandler:^{
-            [application endBackgroundTask:ID];
+        _backgroundTaskIdentifier = [application beginBackgroundTaskWithExpirationHandler:^{
+            [application endBackgroundTask:_backgroundTaskIdentifier];
         }];
     }
 
+    //测试是否停止
+    [NSTimer scheduledTimerWithTimeInterval:.5f target:self selector:@selector(timer) userInfo:self repeats:YES];
 }
+
+- (void) timer
+{
+    static int i;
+    i++;
+    NSLog(@"%d",i);
+}
+
+- (void) endBackgroundTask{
+    
+    dispatch_queue_t mainQueue = dispatch_get_main_queue();
+    
+    AppDelegate *weakSelf = self;
+    
+    dispatch_async(mainQueue, ^(void) {
+        
+        if (weakSelf != nil){
+            
+            [[UIApplication sharedApplication] endBackgroundTask:weakSelf.backgroundTaskIdentifier];
+            
+            weakSelf.backgroundTaskIdentifier = UIBackgroundTaskInvalid;
+        }
+        
+    });
+    
+}
+
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.

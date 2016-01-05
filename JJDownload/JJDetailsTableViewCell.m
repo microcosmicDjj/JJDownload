@@ -66,7 +66,7 @@
             state = JJDownloadSucceed;
             break;
         case JJDownloadTypeErrer:
-            state = @"失败";
+            state = @"继续下载";
             break;
         default:
             break;

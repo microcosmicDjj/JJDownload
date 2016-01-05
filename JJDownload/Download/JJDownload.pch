@@ -23,6 +23,8 @@
 #define JJDownloadUrlKey @"dowloads"
 //下载成功通知的key值
 #define JJdownloadSucceedKey @"JJdownloadSucceedKey"
+//退出后台的通知
+#define JJEndBackgroundTask @"endBackgroundTask"
 
 #endif /* JJDownload_pch */
 

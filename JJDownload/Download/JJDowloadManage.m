@@ -85,6 +85,10 @@ static JJDowloadManage *G_Manage;
     if ([self.dowloadManageDelegate respondsToSelector:@selector(dowloadSucceed:)]) {
         [self.dowloadManageDelegate dowloadSucceed:file];
     }
+    
+    if (![self isSucceedDowload]) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:JJEndBackgroundTask object:nil];
+    }
 }
 
 - (void) addUrls:(NSString *)urlStr isDowmload:(BOOL) isDowmload
