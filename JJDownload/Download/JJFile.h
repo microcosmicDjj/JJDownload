@@ -33,12 +33,8 @@ typedef void(^JJFileBlock) (id file);
 @property (nonatomic) NSInteger fileLength;
 /*是否下载成功**/
 @property (nonatomic) BOOL dowloadSucceed;
-/*回调block**/
-@property (nonatomic, copy) JJFileBlock block;
 
 - (instancetype)initWithUrlStr:(NSString *) urlStr;
-
-- (void) setFileBlock:(JJFileBlock) block;
 
 /*
  * MARK:保存总大小

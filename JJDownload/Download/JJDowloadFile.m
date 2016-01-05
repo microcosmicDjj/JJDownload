@@ -51,11 +51,12 @@
     //存储总大小
     [_file saveAllBytesSize:allBytesSize];
     
-    // 接收这个请求，允许接收服务器的数据
-    completionHandler(NSURLSessionResponseAllow);
     if ([self.dowloadFileDelegate respondsToSelector:@selector(dowloadFileType:)]) {
         [self.dowloadFileDelegate dowloadFileType:JJDownloadTypeResumed];
     }
+    // 接收这个请求，允许接收服务器的数据
+    completionHandler(NSURLSessionResponseAllow);
+
 }
 
 // 接收到服务器返回的数据,写入磁盘
@@ -132,7 +133,7 @@
     if (!_session) {
         NSOperationQueue *queue = [[NSOperationQueue alloc] init];
         queue.maxConcurrentOperationCount = 1; //限制只能在一个线程之内下载
-        _session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:queue];
+        _session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:queue]; //backgroundSessionConfigurationWithIdentifier  不支持ios7郁闷
     }
     return _session;
 }

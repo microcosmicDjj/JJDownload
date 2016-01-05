@@ -9,29 +9,41 @@
 #import "JJDetailsTableViewCell.h"
 #import "JJFile.h"
 
+@interface JJDetailsTableViewCell()
+
+@property (nonatomic, strong) NSTimer *timer;
+
+@end
+
 @implementation JJDetailsTableViewCell
 
+- (void)dealloc
+{
+    [_timer invalidate];
+    _timer = nil;
+}
 
 - (void) setFile:(JJFile *)file
 {
     _file = file;
     
-    __weak typeof(self) weakSelf = self;
-    [_file setFileBlock:^(id file) {
-        [weakSelf showCellProgress:file];
-    }];
-    [self showCellProgress:file];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:.5f target:self selector:@selector(showCellProgress:) userInfo:self repeats:YES];
+    [self showCellProgress:_timer];
 }
 
 
-- (void) showCellProgress:(JJFile *) file
+- (void) showCellProgress:(NSTimer *) timer
 {
     //显示进度
-    self.progressView.progress = (float)file.writeBytesSize/(float)file.allBytesSize;
+    self.progressView.progress = (float)_file.writeBytesSize/(float)_file.allBytesSize;
     //设置状态
-    self.downloadStateLabel.text = [self stateType:file.downloadType];
-    self.downloadSizeLabel.text = [NSString stringWithFormat:@"%.2f/%.2fMB",(file.writeBytesSize/1024.0/1024.0),(file.allBytesSize/1024.0/1024.0)];
-    self.fileNameLabel.text = file.urlStr.lastPathComponent;
+    self.downloadStateLabel.text = [self stateType:_file.downloadType];
+    self.downloadSizeLabel.text = [NSString stringWithFormat:@"%.2f/%.2fMB",(_file.writeBytesSize/1024.0/1024.0),(_file.allBytesSize/1024.0/1024.0)];
+    self.fileNameLabel.text = _file.urlStr.lastPathComponent;
+    if ([self.downloadSizeLabel.text isEqualToString:JJDownloadSucceed]) {
+        [_timer invalidate];
+        _timer = nil;
+    }
 }
 
 - (NSString *) stateType:(JJDownloadType) type

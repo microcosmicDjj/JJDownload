@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "JJDowloadManage.h"
 
 @interface AppDelegate ()
 
@@ -26,8 +27,17 @@
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    JJDowloadManage *manage = [JJDowloadManage manage];
+    
+    //判断需不需要申请后台运行，如果需要申请10分钟的后台运行权限
+    //如果正在下载
+    if ([manage isSucceedDowload]) {
+        UIBackgroundTaskIdentifier ID = [application beginBackgroundTaskWithExpirationHandler:^{
+            [application endBackgroundTask:ID];
+        }];
+    }
+
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {

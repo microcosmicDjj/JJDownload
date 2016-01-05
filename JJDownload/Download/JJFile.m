@@ -43,15 +43,6 @@
 {
     self.downloadType = type;
     
-    //添加到主线程运行，否则可能出现ui刷新的bug
-    dispatch_queue_t queue=dispatch_get_main_queue();
-    __weak typeof(self) weakSelf = self;
-    dispatch_async(queue, ^{
-        if (weakSelf.block) {
-            weakSelf.block(self);
-        }
-    });
-    
     if (type == JJDownloadTypeSucceed) {
         dispatch_queue_t queue=dispatch_get_main_queue();
         __weak typeof(self) weakSelf = self;
@@ -59,11 +50,6 @@
             [[NSNotificationCenter defaultCenter] postNotificationName:JJdownloadSucceedKey object:weakSelf];
         });
     }
-}
-
-- (void) setFileBlock:(JJFileBlock) block
-{
-    _block = block;
 }
 
 /*
@@ -179,15 +165,6 @@
 - (void) setDownloadType:(JJDownloadType) downloadType
 {
     _downloadType = downloadType;
-    
-    //添加到主线程运行，否则可能出现ui刷新的bug
-    dispatch_queue_t queue=dispatch_get_main_queue();
-    __weak typeof(self) weakSelf = self;
-    dispatch_async(queue, ^{
-        if (weakSelf.block) {
-            weakSelf.block(self);
-        }
-    });
 }
 
 /*
@@ -197,9 +174,6 @@
 {
     [self.dowloadFile resume];
     self.downloadType = JJDownloadTypeResumed;
-    if (self.block) {
-        self.block(self);
-    }
 }
 /*
  * MARK: 暂停下载
@@ -208,9 +182,6 @@
 {
     [self.dowloadFile suspend];
     self.downloadType = JJDownloadTypeWillResume;
-    if (self.block) {
-        self.block(self);
-    }
 }
 
 - (JJDowloadFile *) dowloadFile
