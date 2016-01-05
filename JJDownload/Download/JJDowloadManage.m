@@ -43,34 +43,38 @@ static JJDowloadManage *G_Manage;
         
         //接受通知
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(downloadSucceed:) name:JJdownloadSucceedKey object:nil];
-        
-        NSArray *urls = [self inquireData:JJDownloadUrlKey];
-        
-        BOOL isDowload = NO;
-        for (NSString *urlStr in urls) {
-            if (![JJDowloadFilePath dowloadSucceedUrlStr:urlStr]) {
-                isDowload = YES;
-            }
-        }
-        
-        for (NSString *urlStr in urls) {
-            [self addUrls:urlStr isDowmload:YES];
-        }
-        if (isDowload == YES) {
-            RIButtonItem *cancelItem = [RIButtonItem itemWithLabel:@"取消" action:^{
-
-            }];
-            RIButtonItem *dowloadItem = [RIButtonItem itemWithLabel:@"继续下载" action:^{
-                for (NSString *urlStr in urls) {
-                    [self addUrls:urlStr isDowmload:YES];
-                }
-            }];
-            
-            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"还有未下载完成的，是否继续" message:nil cancelButtonItem:cancelItem otherButtonItems:dowloadItem, nil];
-            [alertView show];
-        }
     }
     return self;
+}
+
+//MARK: 检查刚进入时是否有下载任务
+- (void) detectionSucceedDowload
+{
+    NSArray *urls = [self inquireData:JJDownloadUrlKey];
+    
+    BOOL isDowload = NO;
+    for (NSString *urlStr in urls) {
+        if (![JJDowloadFilePath dowloadSucceedUrlStr:urlStr]) {
+            isDowload = YES;
+        }
+    }
+    
+    for (NSString *urlStr in urls) {
+        [self addUrls:urlStr isDowmload:YES];
+    }
+    if (isDowload == YES) {
+        RIButtonItem *cancelItem = [RIButtonItem itemWithLabel:@"取消" action:^{
+            
+        }];
+        RIButtonItem *dowloadItem = [RIButtonItem itemWithLabel:@"继续下载" action:^{
+            for (NSString *urlStr in urls) {
+                [self addUrls:urlStr isDowmload:YES];
+            }
+        }];
+        
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"还有未下载完成的，是否继续" message:nil cancelButtonItem:cancelItem otherButtonItems:dowloadItem, nil];
+        [alertView show];
+    }
 }
 
 - (void) downloadSucceed:(NSNotification *) obj

@@ -30,6 +30,8 @@ typedef NS_ENUM(NSInteger, JJUrlDownloadState) {
 
 + (instancetype) manage;
 
+//MARK: 检查刚进入时是否有下载任务
+- (void) detectionSucceedDowload;
 //MARK: 开始
 - (void) succeedUrlStr:(NSString *) urlStr;
 //MARK: 暂停
